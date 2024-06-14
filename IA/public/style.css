@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+    background-color: rgb(237, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LADO ESQUERDO */
+
+aside {
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside:nth-of-type(1) {
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside:nth-of-type(1) div:nth-of-type(1) {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+aside:nth-of-type(1) div:nth-of-type(2) {
+    width: 100%;
+    height: 85%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+aside:nth-of-type(1) h1 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+}
+
+aside:nth-of-type(1) p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* LADO DIREITO */
+
+aside:nth-of-type(2) {
+    width: 55%;
+    height: 100%;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+aside:nth-of-type(2) div:nth-of-type(1) {
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+aside:nth-of-type(2) p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+aside:nth-of-type(2) div:nth-of-type(2) {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside:nth-of-type(2) div:nth-of-type(2) textarea {
+    width: 90%;
+    height: 50%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.566);
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    background-color: rgba(228, 225, 225, 0.433);
+}
+
+aside:nth-of-type(2) button {
+    height: 50%;
+    padding: 0 20px;
+    border: 1px solid rgba(128, 128, 128, 0.566);
+    border-radius: 10px;
+    cursor: pointer;
+}
